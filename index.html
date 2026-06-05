@@ -2,16 +2,258 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: red;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <meta name="description" content="Join us in celebrating the wedding of Sarah & Michael on June 15, 2024">
+    
+    <title>Yogeshwaran & Manjuladevi | Purple Wedding Invitation</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>welcome to github</h1>
-    <h1>welcome to github</h1>
+    <button class="door-button" onclick="topOpen()"><span class="door-button-span"> <b>YM</b> <span>Tap to open </span></button>
+    <div class="door1"></div>
+    <div class="door2"></div>
+
+    <div class="body">
+
+
+    <!-- Loading Animation -->
+    <!-- <div class="loading-overlay">
+        <div class="loader"></div>
+    </div> -->
+
+    <!-- Falling Sakura Petals Container -->
+    <div class="sakura-container" id="sakuraContainer" style="z-index: 20;"></div>
+
+    <!-- Floating Music Player - Top Right Corner with Mute/Unmute -->
+    <div class="music-player">
+        <button class="music-btn" id="musicToggle">
+            <i class="fas fa-volume-high" id="unmuteIcon"></i>
+            <i class="fas fa-volume-mute" id="muteIcon" style="display: none;"></i>
+        </button>
+        <div class="music-info">
+            <span class="song-title">Canon in D Major</span>
+            <span class="artist">Johann Pachelbel</span>
+        </div>
+        <audio id="weddingMusic" loop preload="auto">
+            <source src="assets/mp3/wedding-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Left Side Flower Garland -->
+    <!-- <div class="flower-garland left-garland">
+        <div class="garland-flower f1"></div>
+        <div class="garland-flower f2"></div>
+        <div class="garland-flower f3"></div>
+        <div class="garland-flower f4"></div>
+        <div class="garland-flower f5"></div>
+        <div class="garland-flower f6"></div>
+        <div class="garland-flower f7"></div>
+        <div class="garland-flower f8"></div>
+        <div class="garland-flower f9"></div>
+        <div class="garland-flower f10"></div>
+    </div> -->
+
+    <!-- Right Side Flower Garland -->
+    <!-- <div class="flower-garland right-garland">
+        <div class="garland-flower f1"></div>
+        <div class="garland-flower f2"></div>
+        <div class="garland-flower f3"></div>
+        <div class="garland-flower f4"></div>
+        <div class="garland-flower f5"></div>
+        <div class="garland-flower f6"></div>
+        <div class="garland-flower f7"></div>
+        <div class="garland-flower f8"></div>
+        <div class="garland-flower f9"></div>
+        <div class="garland-flower f10"></div>
+    </div> -->
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Invitation Card -->
+        <div class="invitation-card">
+            <!-- Top Corner Decorations -->
+            <div class="top-left-corner"></div>
+            <div class="top-right-corner"></div>
+            
+            <div class="card-content">
+                <!-- Header with Heartbeat Animation -->
+                    <img src="./assets/mp3/image-removebg-preview.png" class="top-img" alt="">
+                    <br>
+
+                <div class="header-decoration">
+                    <span class="decoration-line"></span>
+                    <i class="fas fa-heart heartbeat-icon"></i>
+                    <span class="decoration-line"></span>
+                </div>
+
+               
+
+                <!-- Invitation Text -->
+                <h1 class="save-the-date">Save The Date</h1>
+                
+                <div class="couple-names">
+                    <h2 class="name">Naveen &nbsp; <span class="name-deg">(Dpt)</span></h2><br>
+                    <span class="ampersand">&</span><br>
+                    <h2 class="name">vishalini  &nbsp; <span class="name-deg">(B.com)</span></h2>
+                </div>
+
+                <h3 class="wedding-subtitle">are getting married!</h3>
+
+
+                     <!-- Reception Info -->
+                <div class="reception-badge">
+                    <i class="fas fa-champagne-glasses"></i>
+                    <span><center>Engagement On Tuesday ,16 <SUP>th</SUP> June , followed by wedding</center></span>
+                </div>
+
+                
+                <!-- Event Details with Icons -->
+                <div class="event-details">
+                    <div class="detail-item">
+                        <i class="fas fa-calendar-alt detail-icon"></i>
+                        <div class="detail-text">
+                            <span class="detail-label">Date</span>
+                            <span class="detail-value">June 17, 2026    </span>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <i class="fas fa-clock detail-icon"></i>
+                        <div class="detail-text">
+                            <span class="detail-label">Time</span>
+                            <span class="detail-value">6:00 AM to 7:00 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt detail-icon"></i>
+                        <div class="detail-text">
+                            <span class="detail-label">Venue</span>
+                            <span class="detail-value">MRJ mahal,somarasampettai,trichy</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            
+
+                <!-- Countdown Timer -->
+                <div class="countdown-section">
+                    <h4 class="countdown-title">Counting Down to Our Special Day</h4>
+                    <div class="countdown-container">
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="days">00</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="hours">00</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="minutes">00</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span class="countdown-number" id="seconds">00</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+                <!-- Google Maps Location - Iframe -->
+                <div class="map-section">
+                    <h4 class="map-title">Venue Location</h4>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5542.323663168639!2d78.62504417885292!3d10.810189847876018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa5fa035023f0d%3A0x6fb80ffde100ed43!2sMRJ%20Mahal%20Function%20Hall!5e0!3m2!1sen!2sin!4v1771392384527!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/v9DnYLXmqa7oxzG57" target="_blank" class="map-link">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="btn btn-secondary" id="downloadInvite">
+                        <i class="fas fa-download"></i>
+                        Download Invitation
+                    </button>
+                    
+                    <button class="btn btn-outline" id="addToCalendar">
+                        <i class="far fa-calendar-plus"></i>
+                        Add to Calendar
+                    </button>
+                </div>
+
+                <!-- RSVP Section -->
+                <div class="rsvp-section">
+                    <h4 class="rsvp-title">Contact us</h4>
+                    
+                    <div class="contact-grid">
+                        <a href="tel:+91 9095277711" class="contact-card">
+                            <i class="fas fa-phone-alt contact-icon" style="transform: rotateY(180deg);"></i>
+                            <span class="contact-text">+91 9095277711</span> &nbsp;&nbsp;
+
+                            <i class="fas fa-phone-alt contact-icon" style="transform: rotateY(180deg);"></i>
+                            <span class="contact-text">+91 8124471934</span>
+                        </a>
+                        
+                       
+                    </div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="social-section">
+                    <p class="social-text">Follow our journey</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/young_blood_31?igsh=MTFzcWZ6czV0bGE1Yw==" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/qr/N7QDYWOPBF7WA1" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom Decoration -->
+                <div class="footer-decoration">
+                    <span class="decoration-line"></span>
+                    <i class="fas fa-heart heartbeat-icon"></i>
+                    <span class="decoration-line"></span>
+                </div>
+
+                <p class="closing-text">We can't wait to celebrate with you!</p>
+            </div>
+
+            <!-- Bottom Corner Decorations -->
+            <div class="bottom-left-corner"></div>
+            <div class="bottom-right-corner"></div>
+        </div>
+    </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
 </body>
-</html>git config --global user.email "you@example.com"
+</html>
+
